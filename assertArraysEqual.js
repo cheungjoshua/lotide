@@ -8,17 +8,17 @@ const eqArrays = function (arrA, arrB) {
   }
 };
 
-const assertEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
+const assertArraysEqual = function (item1, item2) {
+  if (eqArrays(item1, item2)) {
     // ADD the eqArray here?
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${item1} === ${item2}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${item1} !== ${item2}`);
   }
 };
 
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(false, false);
-assertEqual(false, true);
+assertArraysEqual("Bootcamp", "Bootcamp");
+assertArraysEqual("Lighthouse Labs", "Bootcamp");
+assertArraysEqual(1, 1);
+assertArraysEqual(false, false);
+assertArraysEqual(false, true);
