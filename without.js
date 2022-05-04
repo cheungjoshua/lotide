@@ -13,12 +13,11 @@ const without = function (source, unwant) {
   return cleanArr;
 };
 
-const assertArraysEqual = function (item1, item2) {
-  if (eqArrays(item1, item2)) {
-    // ADD the eqArray here?
-    console.log(`✅✅✅ Assertion Passed: ${item1} === ${item2}`);
+const assertArraysEqual = function (actual, expected) {
+  if (eqArrays(actual, expected)) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${item1} !== ${item2}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
