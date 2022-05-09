@@ -1,12 +1,4 @@
-const eqArrays = function (arrA, arrB) {
-  arrA = JSON.stringify(arrA);
-  arrB = JSON.stringify(arrB);
-  if (arrA === arrB) {
-    return true;
-  } else {
-    return false;
-  }
-};
+const eqArrays = require("./eqArrays");
 
 const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -17,8 +9,4 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
-assertArraysEqual("Bootcamp", "Bootcamp");
-assertArraysEqual("Lighthouse Labs", "Bootcamp");
-assertArraysEqual(1, 1);
-assertArraysEqual(false, false);
-assertArraysEqual(false, true);
+module.exports = assertArraysEqual;
