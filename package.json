@@ -1,6 +1,6 @@
 {
   "name": "@jo_wa/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lighthouse Labs lotide library",
   "main": "assertArraysEqual.js",
   "directories": {
